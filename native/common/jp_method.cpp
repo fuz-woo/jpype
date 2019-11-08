@@ -161,7 +161,7 @@ JPMatch JPMethod::findOverload(JPPyObjectVector& arg, bool callInstance)
 		{
 			return match;
 		}
-		if (match.type < JPMatch::_implicit)
+		if (match.type < JPMatch::_explicit)
 			continue;
 
 		if (bestMatch.overload == 0)
